@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-    tabPanels: Ember.A(),
+    tabPanels: null,
     tabType: "tab", // option: tabs, pills, stacked
     isJustified: true,
     fade: false,
@@ -19,7 +19,8 @@ export default Ember.Component.extend({
     }.property("tabType"),
     init: function() {
         this._super();
-        console.log("Inside " + this + ".init...");
+        this.set("tabPanels", Ember.A());
+
     },
     
     willInsertElement: function() {

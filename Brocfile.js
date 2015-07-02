@@ -19,5 +19,6 @@ var app = new EmberApp();
 app.import('bower_components/bootstrap/dist/css/bootstrap.css');
 app.import('bower_components/bootstrap/dist/css/bootstrap.css.map', {destDir: 'assets'});
 app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
+app.import('bower_components/google-code-prettify/bin/run_prettify.min.js');
 
 module.exports = app.toTree();

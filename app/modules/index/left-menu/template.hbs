@@ -1,13 +1,4 @@
-{{!--
-            <ul class="nav nav-sidebar">
-    <li class="active">{{#link-to "index.overview"}}Overview <span class="sr-only">(current)</span>{{/link-to}}</li>
-    <li><a href="#">{{#link-to "index.drop-down-menu"}}Drop Down{{/link-to}}</a></li>
-    <li><a href="#">Tabs</a></li>
-    <li><a href="#">Date Picker</a></li>
-    <li><a href="#">Data Table</a></li>
-    <li>=={{uiUtilService.currentPath}}++</li>
-</ul>
-
---}}
-
 {{nav-sidebar dataBinding="sidebarMenuItems" currentRouteBinding="uiUtilService.currentPath"}}
+{{!--{{nav-sidebar dataBinding="sidebarMenuItems" currentRouteBinding="currentPath"}}--}}
+
+--{{currentPath}}==

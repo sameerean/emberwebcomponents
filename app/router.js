@@ -11,7 +11,9 @@ Router.map(function() {
   }, function() {
     this.route("overview");
     this.route("drop-down-menu");
+    this.route("tab");
   });
+
 });
 
 export default Router;

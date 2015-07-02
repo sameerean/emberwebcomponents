@@ -1,3 +1,4 @@
+
 {{#if isStacked}}
 <div class="col-lg-3">
   <ul {{bind-attr class=tabTypeStyle}} role="tablist">
@@ -13,13 +14,17 @@
       {{yield}}
   </div>
 {{else}}
+      <div class="panel panel-default">
+          <div class="panel-heading">
   <ul {{bind-attr class=tabTypeStyle}} role="tablist">
       {{#each _tab in tabPanels}} 
         <li role="presentation" {{bind-attr class="_tab.isDefaultTab:active"}}><a {{bind-attr href="_tab.linkName" aria-controls="_tab.id"}} role="tab" data-toggle="pill">{{_tab.displayName}}</a></li>
       {{/each}}
   </ul>
+          </div>
   <!-- Tab panes -->
-  <div class="tab-content">
+  <div class="tab-content panel-body">
       {{yield}}
+  </div>
   </div>
 {{/if}}

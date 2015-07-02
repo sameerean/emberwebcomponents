@@ -1,36 +1,16 @@
 <h1 class="page-header">Tabs</h1>
-{{!--
-<div>
-  <!-- Nav tabs -->
-  <ul class="nav nav-pills nav-justified" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="pill">Home</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="pill">Profile</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="pill">Messages</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="pill">Settings</a></li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active" id="home">ONE</div>
-    <div role="tabpanel" class="tab-pane fade" id="profile">TWO</div>
-    <div role="tabpanel" class="tab-pane fade" id="messages">THREE</div>
-    <div role="tabpanel" class="tab-pane fade" id="settings">FOUR</div>
-  </div>
-
-</div>
---}}
 
 {{#tab-set tabType="pills" fade="false"}}
-    {{#tab-panel id="home" isDefaultTab="true" displayName="Home"}}
-    HOME
+    {{#tab-panel id="component" isDefaultTab="true" displayName="Component"}}
+    Display Component here
     {{/tab-panel}}
-    {{#tab-panel id="profile" displayName="Profile"}}
-    Profile
+    {{#tab-panel id="componentJS" displayName="Component JS"}}
+    Component JS
     {{/tab-panel}}
-    {{#tab-panel id="messages" displayName="Messages"}}
-    Messages
+    {{#tab-panel id="template" displayName="Template"}}
+    Template goes here..
     {{/tab-panel}}
-    {{#tab-panel id="settings" displayName="Settings"}}
-    Settings
+    {{#tab-panel id="data" displayName="Data"}}
+    Data goes here
     {{/tab-panel}}
 {{/tab-set}}
